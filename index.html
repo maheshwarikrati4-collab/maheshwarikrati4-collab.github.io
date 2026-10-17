@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Krati, on repeat</title>
+  <meta name="description" content="Krati Maheshwari — data science student, musician-in-progress, sketchbook person. A portfolio that plays like a playlist.">
+  <link rel="icon" href="assets/spiral-star-blue.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+  <!-- reusable daisy sticker, drawn in code -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="daisy" viewBox="-50 -50 100 100">
+      <g fill="var(--petal, #ffffff)">
+        <ellipse rx="10" ry="22" cy="-25"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(36)"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(72)"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(108)"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(144)"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(180)"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(216)"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(252)"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(288)"/>
+        <ellipse rx="10" ry="22" cy="-25" transform="rotate(324)"/>
+      </g>
+      <circle r="11" fill="var(--heart, #a9c4ec)"/>
+    </symbol>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="#top">krati<span>.fm</span></a>
+    <nav aria-label="Sections">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#art">art</a>
+      <a href="#skills">skills</a>
+      <a href="#experience">experience</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== ALBUM HEADER ===== -->
+    <section class="album">
+      <img class="flow flow-hero" src="assets/flow-lines.png" alt="" aria-hidden="true">
+      <div class="cover" aria-label="Playlist cover: white daisies on navy">
+        <svg class="d d1"><use href="#daisy"/></svg>
+        <svg class="d d2"><use href="#daisy"/></svg>
+        <svg class="d d3"><use href="#daisy"/></svg>
+        <svg class="d d4"><use href="#daisy"/></svg>
+        <svg class="d d5"><use href="#daisy"/></svg>
+        <svg class="d d6"><use href="#daisy"/></svg>
+        <div class="cover-label">
+          <span class="cover-kicker">side A · 2026</span>
+          <span class="cover-title">on repeat</span>
+        </div>
+      </div>
+
+      <div class="album-meta">
+        <p class="eyebrow">portfolio · public playlist</p>
+        <h1>Krati,<br><em>on repeat</em></h1>
+        <p class="album-sub">Data science student, classically trained singer, forever doodling. Here's what I've made so far.</p>
+        <p class="album-facts">
+          <img class="avatar" src="assets/krati.jpg" alt="">
+          <strong>Krati Maheshwari</strong> · Mumbai · 7 tracks
+        </p>
+        <div class="controls">
+          <button class="play-big" id="playBig" aria-label="Play a little sargam">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path class="icon-play" d="M8 5v14l11-7z"/><path class="icon-pause" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+          </button>
+          <button class="ghost" id="shuffle" aria-label="Jump to a random section">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            shuffle
+          </button>
+        </div>
+        <p class="hint" id="hint">▶ plays sa re ga ma pa — a nod to my classical training.</p>
+        <a class="spotify-link" href="https://open.spotify.com/user/66pj2uxs1p2r9oo7cxv0nlasn" target="_blank" rel="noopener">hear what I actually listen to on Spotify ↗</a>
+      </div>
+
+      <figure class="polaroid">
+        <img src="assets/krati.jpg" alt="Mirror selfie of Krati in a cream knit top">
+        <figcaption>me, mid-song</figcaption>
+      </figure>
+      <img class="sticker s-spiral" src="assets/spiral-star-blue.png" alt="" aria-hidden="true">
+    </section>
+
+    <!-- ===== TRACKLIST (doubles as the table of contents) ===== -->
+    <section class="tracklist" aria-label="What's on this page">
+      <div class="tl-head" aria-hidden="true">
+        <span>#</span><span>section</span><span class="tl-album">what's inside</span>
+      </div>
+      <ol>
+        <li><a href="#about"><span class="n">01</span><span class="t">About me</span><span class="tl-album">who I am, what I study</span></a></li>
+        <li><a href="#projects"><span class="n">02</span><span class="t">Projects</span><span class="tl-album">things I've built</span></a></li>
+        <li><a href="#research"><span class="n">03</span><span class="t">Research</span><span class="tl-album">papers I co-wrote</span></a></li>
+        <li><a href="#art"><span class="n">04</span><span class="t">Art</span><span class="tl-album">my sketchbook</span></a></li>
+        <li><a href="#skills"><span class="n">05</span><span class="t">Skills</span><span class="tl-album">tools &amp; languages</span></a></li>
+        <li><a href="#experience"><span class="n">06</span><span class="t">Experience</span><span class="tl-album">roles &amp; teams</span></a></li>
+        <li><a href="#contact"><span class="n">07</span><span class="t">Contact</span><span class="tl-album">say hi</span></a></li>
+      </ol>
+    </section>
+
+    <!-- ===== 01 ABOUT ===== -->
+    <section class="track" id="about" data-title="About me">
+      <header class="track-head"><span class="n">01</span><h2>About me</h2></header>
+      <div class="track-body">
+        <p class="lead">Hi, I'm Krati. I study Data Science in the Integrated MBA Tech programme at NMIMS (MPSTME), Mumbai, class of 2029.</p>
+        <p>Before code, there was music. I hold a diploma in Hindustani classical music from Prayag Sangeet Samiti, and right now I'm teaching myself guitar, one sore fingertip at a time. When I'm not doing either, I'm drawing: fashion sketches, zentangles, and whatever my pen decides on.</p>
+        <p>What drives me? Freedom: to build the things I want, learn whatever I'm curious about, and choose my own path.</p>
+      </div>
+      <img class="sticker s-notes" src="assets/notes-doodle.png" alt="" aria-hidden="true">
+    </section>
+
+    <!-- ===== 02 PROJECTS ===== -->
+    <section class="track" id="projects" data-title="Projects">
+      <header class="track-head"><span class="n">02</span><h2>Projects</h2></header>
+      <p class="section-sub">Things I've built, mostly with my teams. Tap a card to read more.</p>
+      <div class="cards">
+        <a class="card" href="projects/vybe-learn.html">
+          <div class="card-cover c1">
+            <svg class="cd"><use href="#daisy"/></svg>
+            <span class="card-pill">live</span>
+          </div>
+          <div class="card-body">
+            <h3>Vybe Learn</h3>
+            <p>An AI tutor that teaches data science on your own data.</p>
+            <span class="card-meta">AI · Gemini · 2026</span>
+            <span class="card-more">read more →</span>
+          </div>
+        </a>
+        <a class="card" href="projects/canteen-crowd-flow.html">
+          <div class="card-cover c2"><svg class="cd"><use href="#daisy"/></svg></div>
+          <div class="card-body">
+            <h3>Canteen Crowd-Flow</h3>
+            <p>A simulation of the 1 PM canteen rush: queues, hotspots and exits.</p>
+            <span class="card-meta">Simulation · Python</span>
+            <span class="card-more">read more →</span>
+          </div>
+        </a>
+        <a class="card" href="projects/global-superstore.html">
+          <div class="card-cover c3"><svg class="cd"><use href="#daisy"/></svg></div>
+          <div class="card-body">
+            <h3>Global Superstore Analysis</h3>
+            <p>An end-to-end statistical deep dive into a retail dataset.</p>
+            <span class="card-meta">Statistics · Python</span>
+            <span class="card-more">read more →</span>
+          </div>
+        </a>
+        <a class="card" href="projects/campus-hackathon.html">
+          <div class="card-cover c4">
+            <svg class="cd"><use href="#daisy"/></svg>
+            <span class="card-pill">1st place</span>
+          </div>
+          <div class="card-body">
+            <h3>Campus Platforms (Hackathon)</h3>
+            <p>Two campus apps that won the IETE-SF national hackathon.</p>
+            <span class="card-meta">Web · Sep 2025</span>
+            <span class="card-more">read more →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== 03 RESEARCH ===== -->
+    <section class="track" id="research" data-title="Research">
+      <header class="track-head"><span class="n">03</span><h2>Research</h2></header>
+      <div class="track-body">
+        <div class="paper">
+          <p class="badge">COMSYS 2026 · selected for publication</p>
+          <p class="paper-title">A Hybrid LLM Framework for Emission-Constrained Supply Chains with Renewable-Aware RL</p>
+          <p class="muted">Co-author</p>
+        </div>
+        <div class="paper">
+          <p class="badge">Polarizer 2025 · 2nd prize</p>
+          <p class="paper-title">Quantum Key Distribution and Post-Quantum Cryptography: Safeguarding Classical Encryption Against Quantum Threats</p>
+          <p class="muted">Co-author</p>
+        </div>
+      </div>
+      <img class="sticker s-spiral-sm" src="assets/spiral-star.png" alt="" aria-hidden="true">
+    </section>
+
+    <!-- ===== 04 ART ===== -->
+    <section class="track" id="art" data-title="Art">
+      <img class="flow flow-art" src="assets/flow-lines.png" alt="" aria-hidden="true">
+      <header class="track-head"><span class="n">04</span><h2>Art</h2></header>
+      <p class="section-sub">Pages from my sketchbook: fashion sketches in pencil, zentangles in ink. Tap one to see it bigger.</p>
+      <div class="gallery">
+        <button class="art-item" data-full="assets/art/moon-mandala.jpg"><img src="assets/art/moon-mandala.jpg" alt="Ink mandala in the shape of a crescent moon with four-point stars" loading="lazy"><span>moon mandala</span></button>
+        <button class="art-item" data-full="assets/art/gowns-frame.jpg"><img src="assets/art/gowns-frame.jpg" alt="Pencil sketch of a mermaid gown in front of a mirror showing its open back" loading="lazy"><span>mirror, mirror</span></button>
+        <button class="art-item" data-full="assets/art/hope-zentangle.jpg"><img src="assets/art/hope-zentangle.jpg" alt="Zentangle cloud of patterns surrounding the word HOPE" loading="lazy"><span>hope</span></button>
+        <button class="art-item" data-full="assets/art/corset-sketch.jpg"><img src="assets/art/corset-sketch.jpg" alt="Pencil sketch of a corset top with a ruffled skirt" loading="lazy"><span>corset &amp; ruffles</span></button>
+        <button class="art-item" data-full="assets/art/sketchbook-zentangle.jpg"><img src="assets/art/sketchbook-zentangle.jpg" alt="Black and white zentangle page in a spiral sketchbook" loading="lazy"><span>sketchbook page</span></button>
+        <button class="art-item" data-full="assets/art/scary-sketch.jpg"><img src="assets/art/scary-sketch.jpg" alt="Pen sketch of a girl with headphones hugging her knees on a chair, labelled scary" loading="lazy"><span>scary.</span></button>
+        <button class="art-item" data-full="assets/art/gown-and-suit.jpg"><img src="assets/art/gown-and-suit.jpg" alt="Pencil sketch of a strapless gown and a suit on mannequins" loading="lazy"><span>gown &amp; suit</span></button>
+        <button class="art-item" data-full="assets/art/hoodie-sketch.jpg"><img src="assets/art/hoodie-sketch.jpg" alt="Pencil sketch of an oversized hoodie with a heart and a short skirt" loading="lazy"><span>hoodie study</span></button>
+      </div>
+      <svg class="sticker-svg s-daisy-b" aria-hidden="true"><use href="#daisy"/></svg>
+    </section>
+
+    <!-- ===== 05 SKILLS ===== -->
+    <section class="track" id="skills" data-title="Skills">
+      <header class="track-head"><span class="n">05</span><h2>Skills</h2></header>
+      <dl class="skill-list">
+        <div><dt>Programming</dt><dd>Python, SQL, R, C++</dd></div>
+        <div><dt>Data &amp; ML</dt><dd>NumPy, Pandas, Matplotlib, Seaborn, scikit-learn, statistics, machine learning</dd></div>
+        <div><dt>AI &amp; product</dt><dd>LLM apps, multi-agent systems, prompt writing, Gemini API, AI-assisted development</dd></div>
+        <div><dt>Tools</dt><dd>Git, GitHub, Vercel, Power BI, Tableau, AWS, SAS Viya, MS Office</dd></div>
+        <div><dt>Design</dt><dd>Canva, DaVinci Resolve, sketching</dd></div>
+        <div><dt>Music</dt><dd>Hindustani classical (diploma, first division), guitar (learning)</dd></div>
+        <div><dt>Certified</dt><dd>AWS Cloud Technical Essentials, Amazon Web Services (2026)</dd></div>
+      </dl>
+    </section>
+
+    <!-- ===== 06 EXPERIENCE ===== -->
+    <section class="track" id="experience" data-title="Experience">
+      <header class="track-head"><span class="n">06</span><h2>Experience</h2></header>
+      <ol class="timeline">
+        <li>
+          <span class="when">Jan 2025 – Jun 2025</span>
+          <div>
+            <h3>Sales Team Lead · Designare</h3>
+            <p>Led the core sales team and two state-level ambassador teams (8–9 people each). Together we grew sign-ups for the flagship designathon to 1,000+ participants, including 70+ in a single day.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Jul 2024 – Jul 2025</span>
+          <div>
+            <h3>Executive · Analytika (Data Science Club) &amp; IEC (E-Cell), MPSTME</h3>
+            <p>Coordinated club events and designed promotional creatives in Canva and DaVinci Resolve.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== 07 CONTACT ===== -->
+    <section class="track outro" id="contact" data-title="Contact">
+      <header class="track-head"><span class="n">07</span><h2>Contact</h2></header>
+      <div class="track-body">
+        <p class="lead">Want to collab, swap song recs, or talk data? Say hi.</p>
+        <ul class="contact">
+          <li><a href="mailto:maheshwarikrati4@gmail.com"><span>email</span>maheshwarikrati4@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/krati-maheshwari-b14067314" target="_blank" rel="noopener"><span>linkedin</span>krati-maheshwari</a></li>
+          <li><a href="https://github.com/maheshwarikrati4-collab" target="_blank" rel="noopener"><span>github</span>maheshwarikrati4-collab</a></li>
+          <li><a href="https://open.spotify.com/user/66pj2uxs1p2r9oo7cxv0nlasn" target="_blank" rel="noopener"><span>spotify</span>my real playlists</a></li>
+        </ul>
+      </div>
+      <svg class="sticker-svg s-daisy-c" aria-hidden="true"><use href="#daisy"/></svg>
+    </section>
+
+    <footer class="foot">
+      <p>made by Krati in HTML, CSS &amp; JS (with a little AI help) · © 2026 · thanks for listening ✦</p>
+    </footer>
+  </main>
+
+  <!-- art lightbox -->
+  <dialog class="lightbox" id="lightbox">
+    <button class="lb-close" aria-label="Close">×</button>
+    <img id="lbImg" src="assets/art/moon-mandala.jpg" alt="">
+    <p id="lbCap"></p>
+  </dialog>
+
+  <!-- ===== NOW PLAYING BAR ===== -->
+  <div class="nowbar" role="region" aria-label="Now playing">
+    <img class="nb-cover" src="assets/spiral-star-blue.png" alt="" aria-hidden="true">
+    <div class="nb-text">
+      <span class="nb-title" id="nbTitle">on repeat</span>
+      <span class="nb-artist">Krati Maheshwari</span>
+    </div>
+    <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <button class="nb-play" id="playSmall" aria-label="Play a little sargam">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path class="icon-play" d="M8 5v14l11-7z"/><path class="icon-pause" d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+    </button>
+    <div class="nb-progress" aria-hidden="true"><span id="nbBar"></span></div>
+  </div>
+
+  <script src="script.js?v=4"></script>
+  <script src="notes.js?v=4"></script>
+</body>
+</html>

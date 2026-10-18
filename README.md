@@ -15,7 +15,7 @@ and Contact. Each project card opens its own page with more detail.
 - `script.js`: the "now playing" bar that follows your scroll, shuffle, the art
   lightbox, and a play button that plucks a short *sargam* (sa re ga ma pa…)
   using the Web Audio API
-- `assets/`: my photo, sticker images, and `art/` with my drawings
+- `assets/`: my photo, sticker images, `art/` with my drawings, `ngo/` with volunteering photos (shared with the NGO's permission)
 
 Plain HTML/CSS/JS, no frameworks and no build step. Hosted on GitHub Pages.
 

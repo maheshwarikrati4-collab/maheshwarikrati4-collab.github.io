@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -40,6 +40,7 @@
       <a href="#art">art</a>
       <a href="#skills">skills</a>
       <a href="#experience">experience</a>
+      <a href="#volunteering">volunteering</a>
       <a href="#contact">contact</a>
     </nav>
   </header>
@@ -68,7 +69,7 @@
         <p class="album-sub">Data science student, classically trained singer, forever doodling. Here's what I've made so far.</p>
         <p class="album-facts">
           <img class="avatar" src="assets/krati.jpg" alt="">
-          <strong>Krati Maheshwari</strong> · Mumbai · 7 tracks
+          <strong>Krati Maheshwari</strong> · Mumbai · 8 tracks
         </p>
         <div class="controls">
           <button class="play-big" id="playBig" aria-label="Play a little sargam">
@@ -102,7 +103,8 @@
         <li><a href="#art"><span class="n">04</span><span class="t">Art</span><span class="tl-album">my sketchbook</span></a></li>
         <li><a href="#skills"><span class="n">05</span><span class="t">Skills</span><span class="tl-album">tools &amp; languages</span></a></li>
         <li><a href="#experience"><span class="n">06</span><span class="t">Experience</span><span class="tl-album">roles &amp; teams</span></a></li>
-        <li><a href="#contact"><span class="n">07</span><span class="t">Contact</span><span class="tl-album">say hi</span></a></li>
+        <li><a href="#volunteering"><span class="n">07</span><span class="t">Volunteering</span><span class="tl-album">teaching at Dynamic NGO</span></a></li>
+        <li><a href="#contact"><span class="n">08</span><span class="t">Contact</span><span class="tl-album">say hi</span></a></li>
       </ol>
     </section>
 
@@ -238,9 +240,34 @@
       </ol>
     </section>
 
-    <!-- ===== 07 CONTACT ===== -->
+    <!-- ===== 07 VOLUNTEERING ===== -->
+    <section class="track" id="volunteering" data-title="Volunteering">
+      <header class="track-head"><span class="n">07</span><h2>Volunteering</h2></header>
+      <div class="track-body">
+        <p class="lead">For two months I taught pre-nursery classes with Dynamic NGO.</p>
+        <p>Rhymes, numbers and letters, sung, counted and traced with very small, very enthusiastic people. Some days that meant leading a rhyme at full volume, others it meant going desk to desk helping with worksheets or putting up posters to make the classroom feel welcoming.</p>
+      </div>
+      <dl class="facts vol-facts">
+        <div><dt>When</dt><dd>15 May – 15 July 2025</dd></div>
+        <div><dt>Role</dt><dd>Volunteer teacher</dd></div>
+        <div><dt>Class</dt><dd>Pre-nursery</dd></div>
+        <div><dt>Taught</dt><dd>Rhymes, numbers, letters</dd></div>
+      </dl>
+      <div class="gallery photos">
+          <button class="art-item" data-full="assets/ngo/class-group.jpg"><img src="assets/ngo/class-group.jpg" alt="Krati and another volunteer sitting on the floor with a big group of pre-nursery kids making peace signs, a number hopscotch mat in front" loading="lazy"><span>the whole gang, peace signs and all</span></button>
+          <button class="art-item" data-full="assets/ngo/helping-worksheets.jpg"><img src="assets/ngo/helping-worksheets.jpg" alt="Krati leaning over to help children working on their workbooks in a bright classroom" loading="lazy"><span>worksheet help, desk by desk</span></button>
+          <button class="art-item" data-full="assets/ngo/colouring.jpg"><img src="assets/ngo/colouring.jpg" alt="Two children from behind, colouring yellow shapes on worksheets at a yellow desk" loading="lazy"><span>colouring time</span></button>
+          <button class="art-item" data-full="assets/ngo/poster-board.jpg"><img src="assets/ngo/poster-board.jpg" alt="Krati pinning a hand-painted welcome-back poster onto a green board while a friend holds a book" loading="lazy"><span>decorating the classroom board</span></button>
+          <button class="art-item" data-full="assets/ngo/selfie-kids.jpg"><img src="assets/ngo/selfie-kids.jpg" alt="Smiling selfie of Krati surrounded by curious, grinning kids" loading="lazy"><span>selfie, with photobombers</span></button>
+          <button class="art-item" data-full="assets/ngo/reading-time.jpg"><img src="assets/ngo/reading-time.jpg" alt="Kids reading picture books at their desks while Krati sits with a few of them at the back" loading="lazy"><span>rhymes and picture books</span></button>
+          <button class="art-item" data-full="assets/ngo/classroom-team.jpg"><img src="assets/ngo/classroom-team.jpg" alt="Krati with teachers and a fellow volunteer in a classroom with an animal mural, kids at their desks" loading="lazy"><span>with the teachers</span></button>
+      </div>
+      <svg class="sticker-svg s-daisy-v" aria-hidden="true"><use href="#daisy"/></svg>
+    </section>
+
+    <!-- ===== 08 CONTACT ===== -->
     <section class="track outro" id="contact" data-title="Contact">
-      <header class="track-head"><span class="n">07</span><h2>Contact</h2></header>
+      <header class="track-head"><span class="n">08</span><h2>Contact</h2></header>
       <div class="track-body">
         <p class="lead">Want to collab, swap song recs, or talk data? Say hi.</p>
         <ul class="contact">
@@ -279,7 +306,7 @@
     <div class="nb-progress" aria-hidden="true"><span id="nbBar"></span></div>
   </div>
 
-  <script src="script.js?v=4"></script>
-  <script src="notes.js?v=4"></script>
+  <script src="script.js?v=6"></script>
+  <script src="notes.js?v=6"></script>
 </body>
 </html>

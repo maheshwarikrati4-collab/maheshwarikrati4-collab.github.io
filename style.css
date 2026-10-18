@@ -499,3 +499,23 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 16px; position: relati
   .card, .art-item, .tracklist a, .contact a, .p-nav a { transition: none; }
   .card:hover, .art-item:hover, .tracklist a:hover { transform: none; }
 }
+
+/* app screenshot in a little browser window */
+.shot { margin: 0 0 24px; max-width: 620px; }
+.shot > a { display: block; }
+.shot-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--navy); padding: 8px 12px; border-radius: 12px 12px 0 0;
+}
+.shot-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--pink); }
+.shot-bar i:nth-child(2) { background: var(--butter); }
+.shot-bar i:nth-child(3) { background: var(--sky); }
+.shot-bar span { margin-left: 10px; font-family: var(--mono); font-size: 12px; color: var(--powder); opacity: .8; }
+.shot img { width: 100%; border-radius: 0 0 12px 12px; box-shadow: 0 18px 36px -20px rgba(20,37,74,.6); }
+.shot figcaption { font-family: var(--serif); font-style: italic; font-size: 14px; color: var(--ink-soft); margin-top: 8px; }
+
+/* volunteering */
+.vol-facts { margin: 22px 0 24px; }
+.photos { columns: 2 260px; }
+.photos .art-item img { border-radius: 2px; }
+.s-daisy-v { right: 16px; top: 20px; --petal: var(--butter); --heart: var(--blue); }
